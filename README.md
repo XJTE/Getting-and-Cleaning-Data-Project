@@ -25,17 +25,17 @@ The output is created in working directory with the name of tidydata.txt
 
 # Step in run_analysis.R 
 It follows the purpose step by step.
-•	Step 1:
+Step 1:
   Read the entire test and train files: y_test.txt, subject_test.txt, X_test.txt, Y_train.txt, subject_train.txt, X_train.txt.
   Combine the files to a data frame in the form of subjects, activity and features.
-•	Step 2:
+Step 2:
   Read the features from features.txt and filter it to only leave features that are either means ("mean ()") or standard deviations   ("std()"). 
-  A new data frame is then create, contains columns where measures with means, standard deviation, subject and activity.
-•	Step 3:
+  A new data frame is then create, contains columns where measures with means, standard deviation, subject and activity
+Step 3:
   Read the activity labels from activity_labels.txt and replace the numbers with the text.
-•	Step 4:
+Step 4:
   Replace column name with meaningful column name.
-•	Step 5:
+Step 5:
   Create a new data frame by finding the mean for each combination of subject and activity label. It's done by aggregate()function
-•	Final step:
+Final step:
   Write the new tidy set into a text file called tidy2.txt, formatted similarly to the original files.
